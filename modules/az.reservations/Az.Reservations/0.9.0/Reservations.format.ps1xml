@@ -1,0 +1,450 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Configuration>
+  <ViewDefinitions>
+    <View>
+      <Name>Microsoft.Azure.Commands.Reservations.Models.PSAppliedReservationOrderId</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.Reservations.Models.PSAppliedReservationOrderId</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Id</Label>
+                <PropertyName>Id</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Name</Label>
+                <PropertyName>Name</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Type</Label>
+                <PropertyName>Type</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Reservations</Label>
+                <ScriptBlock>$_.PrintAppliedReservationOrderId()</ScriptBlock>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.Reservations.Models.PSCatalog</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.Reservations.Models.PSCatalog</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>ResourceType</Label>
+                <PropertyName>ResourceType</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Name</Label>
+                <PropertyName>Name</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Terms</Label>
+                <ScriptBlock>$_.PrintTerms()</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Locations</Label>
+                <ScriptBlock>$_.PrintLocations()</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>SkuProperties</Label>
+                <ScriptBlock>$_.PrintSkuProperties()</ScriptBlock>
+              </ListItem>
+              <ListItem>
+                <Label>Restrictions</Label>
+                <ScriptBlock>$_.PrintRestrictions()</ScriptBlock>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.Reservations.Models.PSReservationOrderPage</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.Reservations.Models.PSReservationOrderPage</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Value</Label>
+                <PropertyName>Value</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>NextLink</Label>
+                <PropertyName>NextLink</PropertyName>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+    <View>
+      <Name>Microsoft.Azure.Commands.Reservations.Models.PSReservationOrder</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.Reservations.Models.PSReservationOrder</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Etag</Label>
+                <PropertyName>Etag</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Id</Label>
+                <PropertyName>Id</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Name</Label>
+                <PropertyName>Name</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Type</Label>
+                <PropertyName>Type</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>DisplayName</Label>
+                <PropertyName>DisplayName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>RequestDateTime</Label>
+                <PropertyName>RequestDateTime</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>CreatedDateTime</Label>
+                <PropertyName>CreatedDateTime</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Term</Label>
+                <PropertyName>Term</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>ProvisioningState</Label>
+                <PropertyName>ProvisioningState</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Reservations</Label>
+                <ScriptBlock>$_.PrintItems()</ScriptBlock>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+     <View>
+      <Name>Microsoft.Azure.Commands.Reservations.Models.PSReservation</Name>
+      <ViewSelectedBy>
+        <TypeName>Microsoft.Azure.Commands.Reservations.Models.PSReservation</TypeName>
+      </ViewSelectedBy>
+      <ListControl>
+        <ListEntries>
+          <ListEntry>
+            <ListItems>
+              <ListItem>
+                <Label>Sku</Label>
+                <PropertyName>Sku</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Location</Label>
+                <PropertyName>Location</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Etag</Label>
+                <PropertyName>Etag</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Id</Label>
+                <PropertyName>Id</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Name</Label>
+                <PropertyName>Name</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Type</Label>
+                <PropertyName>Type</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>ReservedResourceType</Label>
+                <PropertyName>ReservedResourceType</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>InstanceFlexibility</Label>
+                <PropertyName>InstanceFlexibility</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>DisplayName</Label>
+                <PropertyName>DisplayName</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>AppliedScopes</Label>
+                <ScriptBlock>$_.PrintAppliedScopes()</ScriptBlock>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.AppliedScopes</ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <Label>AppliedScopeType</Label>
+                <PropertyName>AppliedScopeType</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>Quantity</Label>
+                <PropertyName>Quantity</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>ProvisioningState</Label>
+                <PropertyName>ProvisioningState</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>EffectiveDateTime</Label>
+                <PropertyName>EffectiveDateTime</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>LastUpdatedDateTime</Label>
+                <PropertyName>LastUpdatedDateTime</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>EstimatedExpiryDateTime</Label>
+                <PropertyName>EstimatedExpiryDateTime</PropertyName>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.EstimatedExpiryDateTime</ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <Label>SkuDescription</Label>
+                <PropertyName>SkuDescription</PropertyName>
+              </ListItem>
+              <ListItem>
+                <Label>ExtendedStatusInfo</Label>
+                <ScriptBlock>$_.PrintStatusInfo()</ScriptBlock>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.ExtendedStatusInfo</ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <Label>SplitProperties</Label>
+                <ScriptBlock>$_.PrintSplitProperties()</ScriptBlock>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.SplitProperties</ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+              <ListItem>
+                <Label>MergeProperties</Label>
+                <ScriptBlock>$_.PrintMergeProperties()</ScriptBlock>
+                <ItemSelectionCondition>
+                  <ScriptBlock>$_.MergeProperties</ScriptBlock>
+                </ItemSelectionCondition>
+              </ListItem>
+            </ListItems>
+          </ListEntry>
+        </ListEntries>
+      </ListControl>
+    </View>
+  </ViewDefinitions>
+</Configuration>
+<!-- SIG # Begin signature block -->
+<!-- MIIjkgYJKoZIhvcNAQcCoIIjgzCCI38CAQExDzANBglghkgBZQMEAgEFADB5Bgor -->
+<!-- BgEEAYI3AgEEoGswaTA0BgorBgEEAYI3AgEeMCYCAwEAAAQQH8w7YFlLCE63JNLG -->
+<!-- KX7zUQIBAAIBAAIBAAIBAAIBADAxMA0GCWCGSAFlAwQCAQUABCBP/Lt/1KBbZgle -->
+<!-- OQ1pg4pi1MhknM/Ddx3H+cCg2RxyXKCCDYEwggX/MIID56ADAgECAhMzAAABh3IX -->
+<!-- chVZQMcJAAAAAAGHMA0GCSqGSIb3DQEBCwUAMH4xCzAJBgNVBAYTAlVTMRMwEQYD -->
+<!-- VQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNy -->
+<!-- b3NvZnQgQ29ycG9yYXRpb24xKDAmBgNVBAMTH01pY3Jvc29mdCBDb2RlIFNpZ25p -->
+<!-- bmcgUENBIDIwMTEwHhcNMjAwMzA0MTgzOTQ3WhcNMjEwMzAzMTgzOTQ3WjB0MQsw -->
+<!-- CQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9u -->
+<!-- ZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMR4wHAYDVQQDExVNaWNy -->
+<!-- b3NvZnQgQ29ycG9yYXRpb24wggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIB -->
+<!-- AQDOt8kLc7P3T7MKIhouYHewMFmnq8Ayu7FOhZCQabVwBp2VS4WyB2Qe4TQBT8aB -->
+<!-- znANDEPjHKNdPT8Xz5cNali6XHefS8i/WXtF0vSsP8NEv6mBHuA2p1fw2wB/F0dH -->
+<!-- sJ3GfZ5c0sPJjklsiYqPw59xJ54kM91IOgiO2OUzjNAljPibjCWfH7UzQ1TPHc4d -->
+<!-- weils8GEIrbBRb7IWwiObL12jWT4Yh71NQgvJ9Fn6+UhD9x2uk3dLj84vwt1NuFQ -->
+<!-- itKJxIV0fVsRNR3abQVOLqpDugbr0SzNL6o8xzOHL5OXiGGwg6ekiXA1/2XXY7yV -->
+<!-- Fc39tledDtZjSjNbex1zzwSXAgMBAAGjggF+MIIBejAfBgNVHSUEGDAWBgorBgEE -->
+<!-- AYI3TAgBBggrBgEFBQcDAzAdBgNVHQ4EFgQUhov4ZyO96axkJdMjpzu2zVXOJcsw -->
+<!-- UAYDVR0RBEkwR6RFMEMxKTAnBgNVBAsTIE1pY3Jvc29mdCBPcGVyYXRpb25zIFB1 -->
+<!-- ZXJ0byBSaWNvMRYwFAYDVQQFEw0yMzAwMTIrNDU4Mzg1MB8GA1UdIwQYMBaAFEhu -->
+<!-- ZOVQBdOCqhc3NyK1bajKdQKVMFQGA1UdHwRNMEswSaBHoEWGQ2h0dHA6Ly93d3cu -->
+<!-- bWljcm9zb2Z0LmNvbS9wa2lvcHMvY3JsL01pY0NvZFNpZ1BDQTIwMTFfMjAxMS0w -->
+<!-- Ny0wOC5jcmwwYQYIKwYBBQUHAQEEVTBTMFEGCCsGAQUFBzAChkVodHRwOi8vd3d3 -->
+<!-- Lm1pY3Jvc29mdC5jb20vcGtpb3BzL2NlcnRzL01pY0NvZFNpZ1BDQTIwMTFfMjAx -->
+<!-- MS0wNy0wOC5jcnQwDAYDVR0TAQH/BAIwADANBgkqhkiG9w0BAQsFAAOCAgEAixmy -->
+<!-- S6E6vprWD9KFNIB9G5zyMuIjZAOuUJ1EK/Vlg6Fb3ZHXjjUwATKIcXbFuFC6Wr4K -->
+<!-- NrU4DY/sBVqmab5AC/je3bpUpjtxpEyqUqtPc30wEg/rO9vmKmqKoLPT37svc2NV -->
+<!-- BmGNl+85qO4fV/w7Cx7J0Bbqk19KcRNdjt6eKoTnTPHBHlVHQIHZpMxacbFOAkJr -->
+<!-- qAVkYZdz7ikNXTxV+GRb36tC4ByMNxE2DF7vFdvaiZP0CVZ5ByJ2gAhXMdK9+usx -->
+<!-- zVk913qKde1OAuWdv+rndqkAIm8fUlRnr4saSCg7cIbUwCCf116wUJ7EuJDg0vHe -->
+<!-- yhnCeHnBbyH3RZkHEi2ofmfgnFISJZDdMAeVZGVOh20Jp50XBzqokpPzeZ6zc1/g -->
+<!-- yILNyiVgE+RPkjnUQshd1f1PMgn3tns2Cz7bJiVUaqEO3n9qRFgy5JuLae6UweGf -->
+<!-- AeOo3dgLZxikKzYs3hDMaEtJq8IP71cX7QXe6lnMmXU/Hdfz2p897Zd+kU+vZvKI -->
+<!-- 3cwLfuVQgK2RZ2z+Kc3K3dRPz2rXycK5XCuRZmvGab/WbrZiC7wJQapgBodltMI5 -->
+<!-- GMdFrBg9IeF7/rP4EqVQXeKtevTlZXjpuNhhjuR+2DMt/dWufjXpiW91bo3aH6Ea -->
+<!-- jOALXmoxgltCp1K7hrS6gmsvj94cLRf50QQ4U8Qwggd6MIIFYqADAgECAgphDpDS -->
+<!-- AAAAAAADMA0GCSqGSIb3DQEBCwUAMIGIMQswCQYDVQQGEwJVUzETMBEGA1UECBMK -->
+<!-- V2FzaGluZ3RvbjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0 -->
+<!-- IENvcnBvcmF0aW9uMTIwMAYDVQQDEylNaWNyb3NvZnQgUm9vdCBDZXJ0aWZpY2F0 -->
+<!-- ZSBBdXRob3JpdHkgMjAxMTAeFw0xMTA3MDgyMDU5MDlaFw0yNjA3MDgyMTA5MDla -->
+<!-- MH4xCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdS -->
+<!-- ZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xKDAmBgNVBAMT -->
+<!-- H01pY3Jvc29mdCBDb2RlIFNpZ25pbmcgUENBIDIwMTEwggIiMA0GCSqGSIb3DQEB -->
+<!-- AQUAA4ICDwAwggIKAoICAQCr8PpyEBwurdhuqoIQTTS68rZYIZ9CGypr6VpQqrgG -->
+<!-- OBoESbp/wwwe3TdrxhLYC/A4wpkGsMg51QEUMULTiQ15ZId+lGAkbK+eSZzpaF7S -->
+<!-- 35tTsgosw6/ZqSuuegmv15ZZymAaBelmdugyUiYSL+erCFDPs0S3XdjELgN1q2jz -->
+<!-- y23zOlyhFvRGuuA4ZKxuZDV4pqBjDy3TQJP4494HDdVceaVJKecNvqATd76UPe/7 -->
+<!-- 4ytaEB9NViiienLgEjq3SV7Y7e1DkYPZe7J7hhvZPrGMXeiJT4Qa8qEvWeSQOy2u -->
+<!-- M1jFtz7+MtOzAz2xsq+SOH7SnYAs9U5WkSE1JcM5bmR/U7qcD60ZI4TL9LoDho33 -->
+<!-- X/DQUr+MlIe8wCF0JV8YKLbMJyg4JZg5SjbPfLGSrhwjp6lm7GEfauEoSZ1fiOIl -->
+<!-- XdMhSz5SxLVXPyQD8NF6Wy/VI+NwXQ9RRnez+ADhvKwCgl/bwBWzvRvUVUvnOaEP -->
+<!-- 6SNJvBi4RHxF5MHDcnrgcuck379GmcXvwhxX24ON7E1JMKerjt/sW5+v/N2wZuLB -->
+<!-- l4F77dbtS+dJKacTKKanfWeA5opieF+yL4TXV5xcv3coKPHtbcMojyyPQDdPweGF -->
+<!-- RInECUzF1KVDL3SV9274eCBYLBNdYJWaPk8zhNqwiBfenk70lrC8RqBsmNLg1oiM -->
+<!-- CwIDAQABo4IB7TCCAekwEAYJKwYBBAGCNxUBBAMCAQAwHQYDVR0OBBYEFEhuZOVQ -->
+<!-- BdOCqhc3NyK1bajKdQKVMBkGCSsGAQQBgjcUAgQMHgoAUwB1AGIAQwBBMAsGA1Ud -->
+<!-- DwQEAwIBhjAPBgNVHRMBAf8EBTADAQH/MB8GA1UdIwQYMBaAFHItOgIxkEO5FAVO -->
+<!-- 4eqnxzHRI4k0MFoGA1UdHwRTMFEwT6BNoEuGSWh0dHA6Ly9jcmwubWljcm9zb2Z0 -->
+<!-- LmNvbS9wa2kvY3JsL3Byb2R1Y3RzL01pY1Jvb0NlckF1dDIwMTFfMjAxMV8wM18y -->
+<!-- Mi5jcmwwXgYIKwYBBQUHAQEEUjBQME4GCCsGAQUFBzAChkJodHRwOi8vd3d3Lm1p -->
+<!-- Y3Jvc29mdC5jb20vcGtpL2NlcnRzL01pY1Jvb0NlckF1dDIwMTFfMjAxMV8wM18y -->
+<!-- Mi5jcnQwgZ8GA1UdIASBlzCBlDCBkQYJKwYBBAGCNy4DMIGDMD8GCCsGAQUFBwIB -->
+<!-- FjNodHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtpb3BzL2RvY3MvcHJpbWFyeWNw -->
+<!-- cy5odG0wQAYIKwYBBQUHAgIwNB4yIB0ATABlAGcAYQBsAF8AcABvAGwAaQBjAHkA -->
+<!-- XwBzAHQAYQB0AGUAbQBlAG4AdAAuIB0wDQYJKoZIhvcNAQELBQADggIBAGfyhqWY -->
+<!-- 4FR5Gi7T2HRnIpsLlhHhY5KZQpZ90nkMkMFlXy4sPvjDctFtg/6+P+gKyju/R6mj -->
+<!-- 82nbY78iNaWXXWWEkH2LRlBV2AySfNIaSxzzPEKLUtCw/WvjPgcuKZvmPRul1LUd -->
+<!-- d5Q54ulkyUQ9eHoj8xN9ppB0g430yyYCRirCihC7pKkFDJvtaPpoLpWgKj8qa1hJ -->
+<!-- Yx8JaW5amJbkg/TAj/NGK978O9C9Ne9uJa7lryft0N3zDq+ZKJeYTQ49C/IIidYf -->
+<!-- wzIY4vDFLc5bnrRJOQrGCsLGra7lstnbFYhRRVg4MnEnGn+x9Cf43iw6IGmYslmJ -->
+<!-- aG5vp7d0w0AFBqYBKig+gj8TTWYLwLNN9eGPfxxvFX1Fp3blQCplo8NdUmKGwx1j -->
+<!-- NpeG39rz+PIWoZon4c2ll9DuXWNB41sHnIc+BncG0QaxdR8UvmFhtfDcxhsEvt9B -->
+<!-- xw4o7t5lL+yX9qFcltgA1qFGvVnzl6UJS0gQmYAf0AApxbGbpT9Fdx41xtKiop96 -->
+<!-- eiL6SJUfq/tHI4D1nvi/a7dLl+LrdXga7Oo3mXkYS//WsyNodeav+vyL6wuA6mk7 -->
+<!-- r/ww7QRMjt/fdW1jkT3RnVZOT7+AVyKheBEyIXrvQQqxP/uozKRdwaGIm1dxVk5I -->
+<!-- RcBCyZt2WwqASGv9eZ/BvW1taslScxMNelDNMYIVZzCCFWMCAQEwgZUwfjELMAkG -->
+<!-- A1UEBhMCVVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQx -->
+<!-- HjAcBgNVBAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEoMCYGA1UEAxMfTWljcm9z -->
+<!-- b2Z0IENvZGUgU2lnbmluZyBQQ0EgMjAxMQITMwAAAYdyF3IVWUDHCQAAAAABhzAN -->
+<!-- BglghkgBZQMEAgEFAKCBrjAZBgkqhkiG9w0BCQMxDAYKKwYBBAGCNwIBBDAcBgor -->
+<!-- BgEEAYI3AgELMQ4wDAYKKwYBBAGCNwIBFTAvBgkqhkiG9w0BCQQxIgQgeCQxTEys -->
+<!-- 0Zs8BqEfYZMiSIhi3NKGGwmMBpLCc7jG4RswQgYKKwYBBAGCNwIBDDE0MDKgFIAS -->
+<!-- AE0AaQBjAHIAbwBzAG8AZgB0oRqAGGh0dHA6Ly93d3cubWljcm9zb2Z0LmNvbTAN -->
+<!-- BgkqhkiG9w0BAQEFAASCAQAFiyL0+aMzgJA3/jcTXWAhlApNyXBc3j3zsVXAhGTL -->
+<!-- T6TV8R070xBjqllmrGXHcdP0R1kVmX/9AMR5E4oDAp/5c+zQYbZ3D87ae879GTki -->
+<!-- 0JbnQHfIsJlFUOJWvCe3TT+tihi+LnL3Tc4cevQfXlR/HVLL0UfSQh6IjvEjy3xG -->
+<!-- qKF08rXZxVuV1kc7hx4HHC6RpeGJ1P09x5/snh37ilvgK7yEDIDCnep1VieSupIR -->
+<!-- vixJIbffRuyH5fZMSBVEN6npK4/+PxAHscYLNUuNKvwfsPRL7o8T0uO0TRnWNKmf -->
+<!-- xbdDiO9uZXrNr9Bc7Ne/2BHU56fo1NnidPGch1D+0pufoYIS8TCCEu0GCisGAQQB -->
+<!-- gjcDAwExghLdMIIS2QYJKoZIhvcNAQcCoIISyjCCEsYCAQMxDzANBglghkgBZQME -->
+<!-- AgEFADCCAVUGCyqGSIb3DQEJEAEEoIIBRASCAUAwggE8AgEBBgorBgEEAYRZCgMB -->
+<!-- MDEwDQYJYIZIAWUDBAIBBQAEILxFMtQ+RHNNbCNQ0lyjmJ2kyNCYbluJTsSeX/ly -->
+<!-- 0ECVAgZfFz4L7LcYEzIwMjAwNzMwMDgzMDE5LjQ0M1owBIACAfSggdSkgdEwgc4x -->
+<!-- CzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRt -->
+<!-- b25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xKTAnBgNVBAsTIE1p -->
+<!-- Y3Jvc29mdCBPcGVyYXRpb25zIFB1ZXJ0byBSaWNvMSYwJAYDVQQLEx1UaGFsZXMg -->
+<!-- VFNTIEVTTjo4OTdBLUUzNTYtMTcwMTElMCMGA1UEAxMcTWljcm9zb2Z0IFRpbWUt -->
+<!-- U3RhbXAgU2VydmljZaCCDkQwggT1MIID3aADAgECAhMzAAABLCKvRZd1+RvuAAAA -->
+<!-- AAEsMA0GCSqGSIb3DQEBCwUAMHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNo -->
+<!-- aW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29y -->
+<!-- cG9yYXRpb24xJjAkBgNVBAMTHU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQSAyMDEw -->
+<!-- MB4XDTE5MTIxOTAxMTUwM1oXDTIxMDMxNzAxMTUwM1owgc4xCzAJBgNVBAYTAlVT -->
+<!-- MRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQK -->
+<!-- ExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xKTAnBgNVBAsTIE1pY3Jvc29mdCBPcGVy -->
+<!-- YXRpb25zIFB1ZXJ0byBSaWNvMSYwJAYDVQQLEx1UaGFsZXMgVFNTIEVTTjo4OTdB -->
+<!-- LUUzNTYtMTcwMTElMCMGA1UEAxMcTWljcm9zb2Z0IFRpbWUtU3RhbXAgU2Vydmlj -->
+<!-- ZTCCASIwDQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAPK1zgSSq+MxAYo3qpCt -->
+<!-- QDxSMPPJy6mm/wfEJNjNUnYtLFBwl1BUS5trEk/t41ldxITKehs+ABxYqo4Qxsg3 -->
+<!-- Gy1ugKiwHAnYiiekfC+ZhptNFgtnDZIn45zC0AlVr/6UfLtsLcHCh1XElLUHfEC0 -->
+<!-- nBuQcM/SpYo9e3l1qY5NdMgDGxCsmCKdiZfYXIu+U0UYIBhdzmSHnB3fxZOBVcr5 -->
+<!-- htFHEBBNt/rFJlm/A4yb8oBsp+Uf0p5QwmO/bCcdqB15JpylOhZmWs0sUfJKlK9E -->
+<!-- rAhBwGki2eIRFKsQBdkXS9PWpF1w2gIJRvSkDEaCf+lbGTPdSzHSbfREWOF9wY3i -->
+<!-- Yj8CAwEAAaOCARswggEXMB0GA1UdDgQWBBRRahZSGfrCQhCyIyGH9DkiaW7L0zAf -->
+<!-- BgNVHSMEGDAWgBTVYzpcijGQ80N7fEYbxTNoWoVtVTBWBgNVHR8ETzBNMEugSaBH -->
+<!-- hkVodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20vcGtpL2NybC9wcm9kdWN0cy9NaWNU -->
+<!-- aW1TdGFQQ0FfMjAxMC0wNy0wMS5jcmwwWgYIKwYBBQUHAQEETjBMMEoGCCsGAQUF -->
+<!-- BzAChj5odHRwOi8vd3d3Lm1pY3Jvc29mdC5jb20vcGtpL2NlcnRzL01pY1RpbVN0 -->
+<!-- YVBDQV8yMDEwLTA3LTAxLmNydDAMBgNVHRMBAf8EAjAAMBMGA1UdJQQMMAoGCCsG -->
+<!-- AQUFBwMIMA0GCSqGSIb3DQEBCwUAA4IBAQBPFxHIwi4vAH49w9Svmz6K3tM55RlW -->
+<!-- 5pPeULXdut2Rqy6Ys0+VpZsbuaEoxs6Z1C3hMbkiqZFxxyltxJpuHTyGTg61zfNI -->
+<!-- F5n6RsYF3s7IElDXNfZznF1/2iWc6uRPZK8rxxUJ/7emYXZCYwuUY0XjsCpP9pbR -->
+<!-- RKeJi6r5arSyI+NfKxvgoM21JNt1BcdlXuAecdd/k8UjxCscffanoK2n6LFw1PcZ -->
+<!-- lEO7NId7o+soM2C0QY5BYdghpn7uqopB6ixyFIIkDXFub+1E7GmAEwfU6VwEHL7y -->
+<!-- 9rNE8bd+JrQs+yAtkkHy9FmXg/PsGq1daVzX1So7CJ6nyphpuHSN3VfTMIIGcTCC -->
+<!-- BFmgAwIBAgIKYQmBKgAAAAAAAjANBgkqhkiG9w0BAQsFADCBiDELMAkGA1UEBhMC -->
+<!-- VVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNV -->
+<!-- BAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEyMDAGA1UEAxMpTWljcm9zb2Z0IFJv -->
+<!-- b3QgQ2VydGlmaWNhdGUgQXV0aG9yaXR5IDIwMTAwHhcNMTAwNzAxMjEzNjU1WhcN -->
+<!-- MjUwNzAxMjE0NjU1WjB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3Rv -->
+<!-- bjEQMA4GA1UEBxMHUmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0 -->
+<!-- aW9uMSYwJAYDVQQDEx1NaWNyb3NvZnQgVGltZS1TdGFtcCBQQ0EgMjAxMDCCASIw -->
+<!-- DQYJKoZIhvcNAQEBBQADggEPADCCAQoCggEBAKkdDbx3EYo6IOz8E5f1+n9plGt0 -->
+<!-- VBDVpQoAgoX77XxoSyxfxcPlYcJ2tz5mK1vwFVMnBDEfQRsalR3OCROOfGEwWbEw -->
+<!-- RA/xYIiEVEMM1024OAizQt2TrNZzMFcmgqNFDdDq9UeBzb8kYDJYYEbyWEeGMoQe -->
+<!-- dGFnkV+BVLHPk0ySwcSmXdFhE24oxhr5hoC732H8RsEnHSRnEnIaIYqvS2SJUGKx -->
+<!-- Xf13Hz3wV3WsvYpCTUBR0Q+cBj5nf/VmwAOWRH7v0Ev9buWayrGo8noqCjHw2k4G -->
+<!-- kbaICDXoeByw6ZnNPOcvRLqn9NxkvaQBwSAJk3jN/LzAyURdXhacAQVPIk0CAwEA -->
+<!-- AaOCAeYwggHiMBAGCSsGAQQBgjcVAQQDAgEAMB0GA1UdDgQWBBTVYzpcijGQ80N7 -->
+<!-- fEYbxTNoWoVtVTAZBgkrBgEEAYI3FAIEDB4KAFMAdQBiAEMAQTALBgNVHQ8EBAMC -->
+<!-- AYYwDwYDVR0TAQH/BAUwAwEB/zAfBgNVHSMEGDAWgBTV9lbLj+iiXGJo0T2UkFvX -->
+<!-- zpoYxDBWBgNVHR8ETzBNMEugSaBHhkVodHRwOi8vY3JsLm1pY3Jvc29mdC5jb20v -->
+<!-- cGtpL2NybC9wcm9kdWN0cy9NaWNSb29DZXJBdXRfMjAxMC0wNi0yMy5jcmwwWgYI -->
+<!-- KwYBBQUHAQEETjBMMEoGCCsGAQUFBzAChj5odHRwOi8vd3d3Lm1pY3Jvc29mdC5j -->
+<!-- b20vcGtpL2NlcnRzL01pY1Jvb0NlckF1dF8yMDEwLTA2LTIzLmNydDCBoAYDVR0g -->
+<!-- AQH/BIGVMIGSMIGPBgkrBgEEAYI3LgMwgYEwPQYIKwYBBQUHAgEWMWh0dHA6Ly93 -->
+<!-- d3cubWljcm9zb2Z0LmNvbS9QS0kvZG9jcy9DUFMvZGVmYXVsdC5odG0wQAYIKwYB -->
+<!-- BQUHAgIwNB4yIB0ATABlAGcAYQBsAF8AUABvAGwAaQBjAHkAXwBTAHQAYQB0AGUA -->
+<!-- bQBlAG4AdAAuIB0wDQYJKoZIhvcNAQELBQADggIBAAfmiFEN4sbgmD+BcQM9naOh -->
+<!-- IW+z66bM9TG+zwXiqf76V20ZMLPCxWbJat/15/B4vceoniXj+bzta1RXCCtRgkQS -->
+<!-- +7lTjMz0YBKKdsxAQEGb3FwX/1z5Xhc1mCRWS3TvQhDIr79/xn/yN31aPxzymXlK -->
+<!-- kVIArzgPF/UveYFl2am1a+THzvbKegBvSzBEJCI8z+0DpZaPWSm8tv0E4XCfMkon -->
+<!-- /VWvL/625Y4zu2JfmttXQOnxzplmkIz/amJ/3cVKC5Em4jnsGUpxY517IW3DnKOi -->
+<!-- PPp/fZZqkHimbdLhnPkd/DjYlPTGpQqWhqS9nhquBEKDuLWAmyI4ILUl5WTs9/S/ -->
+<!-- fmNZJQ96LjlXdqJxqgaKD4kWumGnEcua2A5HmoDF0M2n0O99g/DhO3EJ3110mCII -->
+<!-- YdqwUB5vvfHhAN/nMQekkzr3ZUd46PioSKv33nJ+YWtvd6mBy6cJrDm77MbL2IK0 -->
+<!-- cs0d9LiFAR6A+xuJKlQ5slvayA1VmXqHczsI5pgt6o3gMy4SKfXAL1QnIffIrE7a -->
+<!-- KLixqduWsqdCosnPGUFN4Ib5KpqjEWYw07t0MkvfY3v1mYovG8chr1m1rtxEPJdQ -->
+<!-- cdeh0sVV42neV8HR3jDA/czmTfsNv11P6Z0eGTgvvM9YBS7vDaBQNdrvCScc1bN+ -->
+<!-- NR4Iuto229Nfj950iEkSoYIC0jCCAjsCAQEwgfyhgdSkgdEwgc4xCzAJBgNVBAYT -->
+<!-- AlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9uMRAwDgYDVQQHEwdSZWRtb25kMR4wHAYD -->
+<!-- VQQKExVNaWNyb3NvZnQgQ29ycG9yYXRpb24xKTAnBgNVBAsTIE1pY3Jvc29mdCBP -->
+<!-- cGVyYXRpb25zIFB1ZXJ0byBSaWNvMSYwJAYDVQQLEx1UaGFsZXMgVFNTIEVTTjo4 -->
+<!-- OTdBLUUzNTYtMTcwMTElMCMGA1UEAxMcTWljcm9zb2Z0IFRpbWUtU3RhbXAgU2Vy -->
+<!-- dmljZaIjCgEBMAcGBSsOAwIaAxUADE5OKSMoNx/mYxYWap1RTOohbJ2ggYMwgYCk -->
+<!-- fjB8MQswCQYDVQQGEwJVUzETMBEGA1UECBMKV2FzaGluZ3RvbjEQMA4GA1UEBxMH -->
+<!-- UmVkbW9uZDEeMBwGA1UEChMVTWljcm9zb2Z0IENvcnBvcmF0aW9uMSYwJAYDVQQD -->
+<!-- Ex1NaWNyb3NvZnQgVGltZS1TdGFtcCBQQ0EgMjAxMDANBgkqhkiG9w0BAQUFAAIF -->
+<!-- AOLM8QEwIhgPMjAyMDA3MzAxMTEwNTdaGA8yMDIwMDczMTExMTA1N1owdzA9Bgor -->
+<!-- BgEEAYRZCgQBMS8wLTAKAgUA4szxAQIBADAKAgEAAgIrhwIB/zAHAgEAAgIRmzAK -->
+<!-- AgUA4s5CgQIBADA2BgorBgEEAYRZCgQCMSgwJjAMBgorBgEEAYRZCgMCoAowCAIB -->
+<!-- AAIDB6EgoQowCAIBAAIDAYagMA0GCSqGSIb3DQEBBQUAA4GBACqQ5z7fdO8jRZ7W -->
+<!-- X/sQt+vyAQ4JczSV8lls4ykufi5NuSg5re7+d3MgOdkwlCmSoWblbbdVqgWlUnJW -->
+<!-- PMZiDZSilfJB5mnaXE4iwtdS2iQp56DG2a6ZTHrr1TK0/4xlbWhsw8zNbf8fPFwr -->
+<!-- jqRlTuziqbYm+0eBhL6BJREGZ9PGMYIDDTCCAwkCAQEwgZMwfDELMAkGA1UEBhMC -->
+<!-- VVMxEzARBgNVBAgTCldhc2hpbmd0b24xEDAOBgNVBAcTB1JlZG1vbmQxHjAcBgNV -->
+<!-- BAoTFU1pY3Jvc29mdCBDb3Jwb3JhdGlvbjEmMCQGA1UEAxMdTWljcm9zb2Z0IFRp -->
+<!-- bWUtU3RhbXAgUENBIDIwMTACEzMAAAEsIq9Fl3X5G+4AAAAAASwwDQYJYIZIAWUD -->
+<!-- BAIBBQCgggFKMBoGCSqGSIb3DQEJAzENBgsqhkiG9w0BCRABBDAvBgkqhkiG9w0B -->
+<!-- CQQxIgQgoh54d+XpsYBUwDtPM4NT0i0Yx+ru9+FkDK2SYooq3LswgfoGCyqGSIb3 -->
+<!-- DQEJEAIvMYHqMIHnMIHkMIG9BCBbn/0uFFh42hTM5XOoKdXevBaiSxmYK9Ilcn9n -->
+<!-- u5ZH4TCBmDCBgKR+MHwxCzAJBgNVBAYTAlVTMRMwEQYDVQQIEwpXYXNoaW5ndG9u -->
+<!-- MRAwDgYDVQQHEwdSZWRtb25kMR4wHAYDVQQKExVNaWNyb3NvZnQgQ29ycG9yYXRp -->
+<!-- b24xJjAkBgNVBAMTHU1pY3Jvc29mdCBUaW1lLVN0YW1wIFBDQSAyMDEwAhMzAAAB -->
+<!-- LCKvRZd1+RvuAAAAAAEsMCIEID4Wa1D50V1B2mWrGhU7e2gsoh4V2SYtW74XckLu -->
+<!-- J2uLMA0GCSqGSIb3DQEBCwUABIIBALTBMzJKVow+VJp4fedi9xtELTg4rP9JmTtm -->
+<!-- +ZafPw43YsBNAzGEbl8BGBual2m9OlpR2kye9wFA07D0unxRAh0fF/LBuE7XvzAQ -->
+<!-- URaQFzDrKn+pqViNmIyjyG3j53ezobSXdkj+3PWfIKkTlxd/WwZiVKOrDmBdKOVz -->
+<!-- aNy4d29anArrUr2uovOR8CixehSStAcdxI9Mi0QJb20er949R5yOeg+JO0a8aKYn -->
+<!-- RWmfLGoOQdVSIL0vQ01RBdRDyafHI8hGEwR/PKPHLsXGcauNmIKMaopN4qaJCy+I -->
+<!-- HBkHArVJ4VCQYV3iDYogeEKDQV4aghjh12rqTfvi9Oe72rVq1LA= -->
+<!-- SIG # End signature block -->

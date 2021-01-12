@@ -1,0 +1,156 @@
+<Objs Version="1.1.0.1" xmlns="http://schemas.microsoft.com/powershell/2004/04">
+  <Obj RefId="0">
+    <TN RefId="0">
+      <T>Microsoft.PowerShell.Commands.PSRepositoryItemInfo</T>
+      <T>System.Management.Automation.PSCustomObject</T>
+      <T>System.Object</T>
+    </TN>
+    <MS>
+      <S N="Name">ExchangeOnlineManagement</S>
+      <S N="Version">2.0.3</S>
+      <S N="Type">Module</S>
+      <S N="Description">This is a General Availability (GA) release of Exchange Online PowerShell V2 module. _x000D__x000A_Please check the documentation here - https://aka.ms/exops-docs. _x000D__x000A_For issues related to the module, contact Microsoft support.</S>
+      <S N="Author">Microsoft Corporation</S>
+      <S N="CompanyName">ExchangeManageabilityTeam</S>
+      <S N="Copyright">(c) 2020 Microsoft. All rights reserved.</S>
+      <DT N="PublishedDate">2020-09-21T08:54:08-06:00</DT>
+      <Nil N="InstalledDate" />
+      <Nil N="UpdatedDate" />
+      <URI N="LicenseUri">http://aka.ms/azps-license</URI>
+      <Nil N="ProjectUri" />
+      <Nil N="IconUri" />
+      <Obj N="Tags" RefId="1">
+        <TN RefId="1">
+          <T>System.Object[]</T>
+          <T>System.Array</T>
+          <T>System.Object</T>
+        </TN>
+        <LST>
+          <S>Exchange</S>
+          <S>ExchangeOnline</S>
+          <S>EXO</S>
+          <S>EXOV2</S>
+          <S>Mailbox</S>
+          <S>Management</S>
+          <S>PSModule</S>
+        </LST>
+      </Obj>
+      <Obj N="Includes" RefId="2">
+        <TN RefId="2">
+          <T>System.Collections.Hashtable</T>
+          <T>System.Object</T>
+        </TN>
+        <DCT>
+          <En>
+            <S N="Key">Command</S>
+            <Obj N="Value" RefId="3">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Get-EXOCasMailbox</S>
+                <S>Get-EXOMailbox</S>
+                <S>Get-EXOMailboxFolderPermission</S>
+                <S>Get-EXOMailboxFolderStatistics</S>
+                <S>Get-EXOMailboxPermission</S>
+                <S>Get-EXOMailboxStatistics</S>
+                <S>Get-EXOMobileDeviceStatistics</S>
+                <S>Get-EXORecipient</S>
+                <S>Get-EXORecipientPermission</S>
+                <S>Get-UserBriefingConfig</S>
+                <S>Set-UserBriefingConfig</S>
+                <S>Connect-ExchangeOnline</S>
+                <S>Connect-IPPSSession</S>
+                <S>Disconnect-ExchangeOnline</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Cmdlet</S>
+            <Obj N="Value" RefId="4">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Get-EXOCasMailbox</S>
+                <S>Get-EXOMailbox</S>
+                <S>Get-EXOMailboxFolderPermission</S>
+                <S>Get-EXOMailboxFolderStatistics</S>
+                <S>Get-EXOMailboxPermission</S>
+                <S>Get-EXOMailboxStatistics</S>
+                <S>Get-EXOMobileDeviceStatistics</S>
+                <S>Get-EXORecipient</S>
+                <S>Get-EXORecipientPermission</S>
+                <S>Get-UserBriefingConfig</S>
+                <S>Set-UserBriefingConfig</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">RoleCapability</S>
+            <Obj N="Value" RefId="5">
+              <TNRef RefId="1" />
+              <LST />
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Function</S>
+            <Obj N="Value" RefId="6">
+              <TNRef RefId="1" />
+              <LST>
+                <S>Connect-ExchangeOnline</S>
+                <S>Connect-IPPSSession</S>
+                <S>Disconnect-ExchangeOnline</S>
+              </LST>
+            </Obj>
+          </En>
+          <En>
+            <S N="Key">Workflow</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+          <En>
+            <S N="Key">DscResource</S>
+            <Ref N="Value" RefId="5" />
+          </En>
+        </DCT>
+      </Obj>
+      <Nil N="PowerShellGetFormatVersion" />
+      <S N="ReleaseNotes">---------------------------------------------------------------------------------------------_x000D__x000A_Whats new in this release:_x000D__x000A_v2.0.3 :_x000D__x000A_    1. General availability of Certificate Based Authentication feature which enables using Modern Authentication in Unattended Scripting or background automation scenarios._x000D__x000A_    2. Certificate Based Authentication accepts Certificate File directly from terminal thus enabling certificate files to be stored in Azure Key Vault and being fetched Just-In-Time for enhanced security. See parameter Certificate in Connect-ExchangeOnline._x000D__x000A_    3. Connect with Exchange Online and Security Compliance Center simultaneously in a single PowerShell window._x000D__x000A_    4. Ability to restrict the PowerShell cmdlets imported in a session using CommandName parameter, thus reducing memory footprint in case of high usage PowerShell applications._x000D__x000A_    5. Get-ExoMailboxFolderPermission now supports ExternalDirectoryObjectID in the Identity parameter._x000D__x000A_    6. Optimized latency of first V2 Cmdlet call. (Lab results show first call latency has been reduced from 8 seconds to ~1 seconds. Actual results will depend on result size and Tenant environment.)_x000D__x000A__x000D__x000A_---------------------------------------------------------------------------------------------_x000D__x000A_Previous Releases:_x000D__x000A__x000D__x000A_v2.0.1 :_x000D__x000A_    1. Support for App-Only Authentication -_x000D__x000A_        Automate your day-to-day exchange management tasks using app-only authentication. This requires setting up an Azure AD app and connecting to Exchange using certificate. Check out https://aka.ms/AzureAD-app for setting up the App and initial onboarding experience._x000D__x000A_        Use below syntax for establishing the connection -_x000D__x000A_            Connect-ExchangeOnline -AppID '&lt;AppId of client ID of the AAD app&gt;' -Organization 'contoso.onmicrosoft.com' -CertificateFilePath '&lt;Full path of the certificate&gt;' -CertificatePassword '&lt;a secure string password if the certificate file is encrypted&gt;'_x000D__x000A__x000D__x000A_v1.0.1 :_x000D__x000A_    1. This is the General Availability (GA) version of EXO PowerShell V2 Module. It is stable and ready for being used in production environments._x000D__x000A_    2. Get-ExoMobileDeviceStatistics cmdlet now supports Identity parameter._x000D__x000A_    3. Improved reliability of session auto-connect in certain cases where script was executing for ~50minutes and threw "Cmdlet not found" error due to a bug in auto-reconnect logic._x000D__x000A_    4. Fixed data-type issues of two commonly used attributed "User" and "MailboxFolderUser" for easy migration of scripts._x000D__x000A_    5. Enhanced support for filters as it now supports 4 more operators - endswith, contains, not and notlike support. Please check online documentation for attributes which are not supported in filter string._x000D__x000A__x000D__x000A_v0.4578.0 :_x000D__x000A_    1. Added support for configuring Briefing Email for your organization at the user level with "Set-UserBriefingConfig" and "Get-UserBriefingConfig" cmdlets._x000D__x000A_    2. Support for session cleanup using Disconnect-ExchangeOnline cmdlet. This cmdlet is V2 equivalent of "Get-PSSession | Remove-PSSession". In addition to cleaning up session object and local files, it also removes access token from cache which is used for authenticating against V2 cmdlets._x000D__x000A_    3. You can now use FolderId as identity parameter in Get-ExoMailboxFolderPermission. You can get folderId using Get-MailboxFolder cmdlet. Below are the supported syntax for getting folder permissions -_x000D__x000A_        a. Get-MailboxFolderPermission -Identity &lt;UPN&gt;:&lt;Folder-Path&gt;_x000D__x000A_        b. Get-MailboxFolderPermission -Identity &lt;UPN&gt;:\&lt;Folder-Id&gt;_x000D__x000A_    4. Improved reliability of Get-ExoMailboxStatistics cmdlet as certain request routing errors which led to failures have been resolved_x000D__x000A_    5. Optimized memory usage when session is created by re-using any existing module with a new session instead of creating a new one every time session is imported_x000D__x000A__x000D__x000A_v0.4368.1 :_x000D__x000A_    1. Added support for Exchange Online Protection (EOP) cmdlets using 'Connect-IPPSSession' cmdlet_x000D__x000A_    2. Hide announcement banner using 'ShowBanner' switch. Default value of this switch is $true. Use below syntax to hide the banner_x000D__x000A_        "Connect-ExchangeOnline -ShowBanner:$false"_x000D__x000A_    3. Terminate cmdlet execution on client exception_x000D__x000A_    4. RPS contained various Complex data types which was consciously not supported in EXO cmdlets for improving the performance. Differences in non-complex Data-types between RPS cmdlets and V2 cmdlets has been resolved to allow seamless migration of management scripts._x000D__x000A__x000D__x000A_v0.3582.0 :_x000D__x000A_    1. Support for prefix during session creation_x000D__x000A_        i. You can create only 1 session at a time which can have prefixed cmdlets._x000D__x000A_       ii. Note that the EXO V2 cmdlets will not be prefixed as they already have a prefix 'EXO' and hence please refrain from using 'EXO' as a prefix during session creation._x000D__x000A_    2. Use EXO V2 cmdlets even if WinRM Basic Auth is disabled on client machine_x000D__x000A_    3. Identity parameter for V2 cmdlets now supports name and alias as well_x000D__x000A_        i. Please note that using alias or name slows down the performance of V2 cmdlets and hence it is not recommended to use this option_x000D__x000A_    4. Fixed issue where data-type of attributes returned by V2 cmdlet was different from Remote PowerShell cmdlets_x000D__x000A_    5. Fixed bug - Frequent sessions reconnects issue when Connect-ExchangeOnline was invoked with Credentials or UserPrincipalName_x000D__x000A__x000D__x000A_v0.3555.1 :_x000D__x000A_    1. Bug fixes and enhancements._x000D__x000A__x000D__x000A_v0.3527.4 :_x000D__x000A_    1. Updated Get-Help._x000D__x000A__x000D__x000A_v0.3527.3 :_x000D__x000A_    1. Added support for managing Exchange for a different tenant using delegation flow._x000D__x000A_        Read more here: https://docs.microsoft.com/en-in/powershell/module/exchange/powershell-v2-module/connect-exchangeonline?view=exchange-ps#parameters_x000D__x000A_    2. Works in tandem with other PowerShell modules in a single PS window_x000D__x000A_    3. Added support for positional parameters_x000D__x000A_    4. Date Time field now supports client locale_x000D__x000A_    5. Fixed Bug : PSCredential getting empty when passed during Connect-ExchangeOnline_x000D__x000A_    6. Fixed Bug : Client module used to throw error when filter contained $null_x000D__x000A_    7. Sessions created internal to EXO V2 Module will now have names (Naming pattern : ExchangeOnlineInternalSession_%SomeNumber% )_x000D__x000A_    8. Fixed Bug : Remote PowerShell cmdlets resulting into intermittent failure due to difference of time between token expiry and PSSession getting Idle._x000D__x000A_    9. Major security update_x000D__x000A_    10. Bug fixes and enhancements_x000D__x000A_---------------------------------------------------------------------------------------------</S>
+      <Obj N="Dependencies" RefId="7">
+        <TNRef RefId="1" />
+        <LST />
+      </Obj>
+      <S N="RepositorySourceLocation">https://www.powershellgallery.com/api/v2</S>
+      <S N="Repository">PSGallery</S>
+      <S N="PackageManagementProvider">NuGet</S>
+      <Obj N="AdditionalMetadata" RefId="8">
+        <TN RefId="3">
+          <T>System.Management.Automation.PSCustomObject</T>
+          <T>System.Object</T>
+        </TN>
+        <MS>
+          <S N="copyright">(c) 2020 Microsoft. All rights reserved.</S>
+          <S N="description">This is a General Availability (GA) release of Exchange Online PowerShell V2 module. _x000D__x000A_Please check the documentation here - https://aka.ms/exops-docs. _x000D__x000A_For issues related to the module, contact Microsoft support.</S>
+          <S N="requireLicenseAcceptance">False</S>
+          <S N="releaseNotes">---------------------------------------------------------------------------------------------_x000D__x000A_Whats new in this release:_x000D__x000A_v2.0.3 :_x000D__x000A_    1. General availability of Certificate Based Authentication feature which enables using Modern Authentication in Unattended Scripting or background automation scenarios._x000D__x000A_    2. Certificate Based Authentication accepts Certificate File directly from terminal thus enabling certificate files to be stored in Azure Key Vault and being fetched Just-In-Time for enhanced security. See parameter Certificate in Connect-ExchangeOnline._x000D__x000A_    3. Connect with Exchange Online and Security Compliance Center simultaneously in a single PowerShell window._x000D__x000A_    4. Ability to restrict the PowerShell cmdlets imported in a session using CommandName parameter, thus reducing memory footprint in case of high usage PowerShell applications._x000D__x000A_    5. Get-ExoMailboxFolderPermission now supports ExternalDirectoryObjectID in the Identity parameter._x000D__x000A_    6. Optimized latency of first V2 Cmdlet call. (Lab results show first call latency has been reduced from 8 seconds to ~1 seconds. Actual results will depend on result size and Tenant environment.)_x000D__x000A__x000D__x000A_---------------------------------------------------------------------------------------------_x000D__x000A_Previous Releases:_x000D__x000A__x000D__x000A_v2.0.1 :_x000D__x000A_    1. Support for App-Only Authentication -_x000D__x000A_        Automate your day-to-day exchange management tasks using app-only authentication. This requires setting up an Azure AD app and connecting to Exchange using certificate. Check out https://aka.ms/AzureAD-app for setting up the App and initial onboarding experience._x000D__x000A_        Use below syntax for establishing the connection -_x000D__x000A_            Connect-ExchangeOnline -AppID '&lt;AppId of client ID of the AAD app&gt;' -Organization 'contoso.onmicrosoft.com' -CertificateFilePath '&lt;Full path of the certificate&gt;' -CertificatePassword '&lt;a secure string password if the certificate file is encrypted&gt;'_x000D__x000A__x000D__x000A_v1.0.1 :_x000D__x000A_    1. This is the General Availability (GA) version of EXO PowerShell V2 Module. It is stable and ready for being used in production environments._x000D__x000A_    2. Get-ExoMobileDeviceStatistics cmdlet now supports Identity parameter._x000D__x000A_    3. Improved reliability of session auto-connect in certain cases where script was executing for ~50minutes and threw "Cmdlet not found" error due to a bug in auto-reconnect logic._x000D__x000A_    4. Fixed data-type issues of two commonly used attributed "User" and "MailboxFolderUser" for easy migration of scripts._x000D__x000A_    5. Enhanced support for filters as it now supports 4 more operators - endswith, contains, not and notlike support. Please check online documentation for attributes which are not supported in filter string._x000D__x000A__x000D__x000A_v0.4578.0 :_x000D__x000A_    1. Added support for configuring Briefing Email for your organization at the user level with "Set-UserBriefingConfig" and "Get-UserBriefingConfig" cmdlets._x000D__x000A_    2. Support for session cleanup using Disconnect-ExchangeOnline cmdlet. This cmdlet is V2 equivalent of "Get-PSSession | Remove-PSSession". In addition to cleaning up session object and local files, it also removes access token from cache which is used for authenticating against V2 cmdlets._x000D__x000A_    3. You can now use FolderId as identity parameter in Get-ExoMailboxFolderPermission. You can get folderId using Get-MailboxFolder cmdlet. Below are the supported syntax for getting folder permissions -_x000D__x000A_        a. Get-MailboxFolderPermission -Identity &lt;UPN&gt;:&lt;Folder-Path&gt;_x000D__x000A_        b. Get-MailboxFolderPermission -Identity &lt;UPN&gt;:\&lt;Folder-Id&gt;_x000D__x000A_    4. Improved reliability of Get-ExoMailboxStatistics cmdlet as certain request routing errors which led to failures have been resolved_x000D__x000A_    5. Optimized memory usage when session is created by re-using any existing module with a new session instead of creating a new one every time session is imported_x000D__x000A__x000D__x000A_v0.4368.1 :_x000D__x000A_    1. Added support for Exchange Online Protection (EOP) cmdlets using 'Connect-IPPSSession' cmdlet_x000D__x000A_    2. Hide announcement banner using 'ShowBanner' switch. Default value of this switch is $true. Use below syntax to hide the banner_x000D__x000A_        "Connect-ExchangeOnline -ShowBanner:$false"_x000D__x000A_    3. Terminate cmdlet execution on client exception_x000D__x000A_    4. RPS contained various Complex data types which was consciously not supported in EXO cmdlets for improving the performance. Differences in non-complex Data-types between RPS cmdlets and V2 cmdlets has been resolved to allow seamless migration of management scripts._x000D__x000A__x000D__x000A_v0.3582.0 :_x000D__x000A_    1. Support for prefix during session creation_x000D__x000A_        i. You can create only 1 session at a time which can have prefixed cmdlets._x000D__x000A_       ii. Note that the EXO V2 cmdlets will not be prefixed as they already have a prefix 'EXO' and hence please refrain from using 'EXO' as a prefix during session creation._x000D__x000A_    2. Use EXO V2 cmdlets even if WinRM Basic Auth is disabled on client machine_x000D__x000A_    3. Identity parameter for V2 cmdlets now supports name and alias as well_x000D__x000A_        i. Please note that using alias or name slows down the performance of V2 cmdlets and hence it is not recommended to use this option_x000D__x000A_    4. Fixed issue where data-type of attributes returned by V2 cmdlet was different from Remote PowerShell cmdlets_x000D__x000A_    5. Fixed bug - Frequent sessions reconnects issue when Connect-ExchangeOnline was invoked with Credentials or UserPrincipalName_x000D__x000A__x000D__x000A_v0.3555.1 :_x000D__x000A_    1. Bug fixes and enhancements._x000D__x000A__x000D__x000A_v0.3527.4 :_x000D__x000A_    1. Updated Get-Help._x000D__x000A__x000D__x000A_v0.3527.3 :_x000D__x000A_    1. Added support for managing Exchange for a different tenant using delegation flow._x000D__x000A_        Read more here: https://docs.microsoft.com/en-in/powershell/module/exchange/powershell-v2-module/connect-exchangeonline?view=exchange-ps#parameters_x000D__x000A_    2. Works in tandem with other PowerShell modules in a single PS window_x000D__x000A_    3. Added support for positional parameters_x000D__x000A_    4. Date Time field now supports client locale_x000D__x000A_    5. Fixed Bug : PSCredential getting empty when passed during Connect-ExchangeOnline_x000D__x000A_    6. Fixed Bug : Client module used to throw error when filter contained $null_x000D__x000A_    7. Sessions created internal to EXO V2 Module will now have names (Naming pattern : ExchangeOnlineInternalSession_%SomeNumber% )_x000D__x000A_    8. Fixed Bug : Remote PowerShell cmdlets resulting into intermittent failure due to difference of time between token expiry and PSSession getting Idle._x000D__x000A_    9. Major security update_x000D__x000A_    10. Bug fixes and enhancements_x000D__x000A_---------------------------------------------------------------------------------------------</S>
+          <S N="isLatestVersion">True</S>
+          <S N="isAbsoluteLatestVersion">False</S>
+          <S N="versionDownloadCount">240133</S>
+          <S N="downloadCount">1850201</S>
+          <S N="packageSize">2962415</S>
+          <S N="published">9/21/2020 8:54:08 AM -06:00</S>
+          <S N="created">9/21/2020 8:54:08 AM -06:00</S>
+          <S N="lastUpdated">1/5/2021 8:57:37 PM -07:00</S>
+          <S N="tags">Exchange ExchangeOnline EXO EXOV2 Mailbox Management PSModule PSCmdlet_Get-EXOCasMailbox PSCommand_Get-EXOCasMailbox PSCmdlet_Get-EXOMailbox PSCommand_Get-EXOMailbox PSCmdlet_Get-EXOMailboxFolderPermission PSCommand_Get-EXOMailboxFolderPermission PSCmdlet_Get-EXOMailboxFolderStatistics PSCommand_Get-EXOMailboxFolderStatistics PSCmdlet_Get-EXOMailboxPermission PSCommand_Get-EXOMailboxPermission PSCmdlet_Get-EXOMailboxStatistics PSCommand_Get-EXOMailboxStatistics PSCmdlet_Get-EXOMobileDeviceStatistics PSCommand_Get-EXOMobileDeviceStatistics PSCmdlet_Get-EXORecipient PSCommand_Get-EXORecipient PSCmdlet_Get-EXORecipientPermission PSCommand_Get-EXORecipientPermission PSCmdlet_Get-UserBriefingConfig PSCommand_Get-UserBriefingConfig PSCmdlet_Set-UserBriefingConfig PSCommand_Set-UserBriefingConfig PSIncludes_Cmdlet PSFunction_Connect-ExchangeOnline PSCommand_Connect-ExchangeOnline PSFunction_Connect-IPPSSession PSCommand_Connect-IPPSSession PSFunction_Disconnect-ExchangeOnline PSCommand_Disconnect-ExchangeOnline PSIncludes_Function</S>
+          <S N="developmentDependency">False</S>
+          <S N="updated">2021-01-05T20:57:37Z</S>
+          <S N="NormalizedVersion">2.0.3</S>
+          <S N="Authors">Microsoft Corporation</S>
+          <S N="IsPrerelease">false</S>
+          <S N="ItemType">Module</S>
+          <S N="FileList">ExchangeOnlineManagement.nuspec|Create-SelfSignedCertificate.ps1|ExchangeOnlineManagement-Help.xml|ExchangeOnlineManagement.psd1|ExchangeOnlineManagement.psm1|license.txt|Microsoft.Exchange.Management.AdminApiProvider.dll|Microsoft.Exchange.Management.ExoPowershellGalleryModule.dll|Microsoft.Exchange.Management.RestApiClient.dll|Microsoft.Exchange.Management.RestApiClient.dll-Help.xml|Microsoft.IdentityModel.Clients.ActiveDirectory.dll|Microsoft.IdentityModel.Clients.ActiveDirectory.xml|Microsoft.OData.Client.dll|Microsoft.OData.Client.xml|Microsoft.OData.Core.dll|Microsoft.OData.Core.xml|Microsoft.OData.Edm.dll|Microsoft.OData.Edm.xml|Microsoft.Online.CSE.RestApiPowerShellModule.Instrumentation.dll|Microsoft.Spatial.dll|Microsoft.Spatial.xml|Newtonsoft.Json.dll|Newtonsoft.Json.xml|System.IO.Abstractions.dll|System.Management.Automation.dll</S>
+          <S N="GUID">B5ECED50-AFA4-455B-847A-D8FB64140A22</S>
+          <S N="PowerShellVersion">3.0</S>
+          <S N="CompanyName">Microsoft Corporation</S>
+        </MS>
+      </Obj>
+      <S N="InstalledLocation">C:\repos\shawnadrockleonard\leetcode\modules\Exo\ExchangeOnlineManagement\2.0.3</S>
+    </MS>
+  </Obj>
+</Objs>
